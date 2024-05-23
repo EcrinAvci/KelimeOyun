@@ -32,8 +32,6 @@
             label2 = new Label();
             button2 = new Button();
             label1 = new Label();
-            button4 = new Button();
-            label4 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -78,40 +76,17 @@
             label1.TabIndex = 4;
             label1.Text = "Sınav";
             // 
-            // button4
-            // 
-            button4.BackgroundImage = Properties.Resources._6104564;
-            button4.BackgroundImageLayout = ImageLayout.Stretch;
-            button4.Location = new Point(232, 196);
-            button4.Name = "button4";
-            button4.Size = new Size(205, 143);
-            button4.TabIndex = 6;
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold);
-            label4.Location = new Point(279, 342);
-            label4.Name = "label4";
-            label4.Size = new Size(120, 21);
-            label4.TabIndex = 8;
-            label4.Text = "Analiz Raporu";
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(449, 369);
-            Controls.Add(label4);
-            Controls.Add(button4);
+            ClientSize = new Size(448, 195);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(button1);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Modül";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,7 +96,5 @@
         private Label label2;
         private Button button2;
         private Label label1;
-        private Button button4;
-        private Label label4;
     }
 }

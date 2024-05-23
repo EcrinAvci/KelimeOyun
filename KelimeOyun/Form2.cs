@@ -30,16 +30,5 @@ namespace KelimeOyun
             frm4.Show();
             this.Hide();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form6 frm6 = new Form6();
-            frm6.Show();
-            this.Hide();
-        }
     }
 }

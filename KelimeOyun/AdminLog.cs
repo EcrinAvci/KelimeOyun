@@ -32,8 +32,8 @@ namespace KelimeOyun
 
                 if (dr.Read())
                 {
-                    Form2 form2 = new Form2();
-                    form2.Show();
+                    Form5 form5 = new Form5();
+                    form5.Show();
                     this.Hide();
                 }
                 else

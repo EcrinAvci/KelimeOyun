@@ -35,6 +35,8 @@
             button1 = new Button();
             label4 = new Label();
             pictureBox1 = new PictureBox();
+            label3 = new Label();
+            textBox2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold);
-            label2.Location = new Point(25, 180);
+            label2.Location = new Point(25, 155);
             label2.Name = "label2";
             label2.Size = new Size(107, 21);
             label2.TabIndex = 1;
@@ -64,7 +66,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(138, 182);
+            textBox1.Location = new Point(138, 157);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(137, 23);
             textBox1.TabIndex = 3;
@@ -101,11 +103,31 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label3.Location = new Point(25, 192);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 19);
+            label3.TabIndex = 10;
+            label3.Text = "Türkçe Adı";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(138, 190);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(137, 23);
+            textBox2.TabIndex = 11;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(345, 286);
+            Controls.Add(textBox2);
+            Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(button1);
@@ -113,7 +135,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form3";
-            Text = "Form3";
+            Text = "Kelime Ekleme";
             Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -129,5 +151,7 @@
         private Button button1;
         private Label label4;
         private PictureBox pictureBox1;
+        private Label label3;
+        private TextBox textBox2;
     }
 }
