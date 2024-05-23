@@ -57,7 +57,7 @@ namespace KelimeOyun
 
                 answeredQuestionCount++;
                 
-                if (answeredQuestionCount == 10)
+                if (answeredQuestionCount == Settings.NewWordCount)
                 {
                     MessageBox.Show("Tebrikler! Günlük soruları tamamladınız.");
                     Application.Exit();
@@ -420,13 +420,18 @@ namespace KelimeOyun
             return questionIDs;
         }
 
-
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
+            SettingsForm settingsForm= new SettingsForm();
+            settingsForm.NewWordCountChanged += SettingsForm_NewWordCountChanged;
+            settingsForm.ShowDialog();
         }
+        private void SettingsForm_NewWordCountChanged(int newWordCount)
+        {
+            // Yeni kelime çıkma sayısını güncelle
+            Settings.NewWordCount = newWordCount;
+        }
+
 
     }
 }

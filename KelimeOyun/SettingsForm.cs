@@ -17,25 +17,25 @@ namespace KelimeOyun
             InitializeComponent();
         }
 
-        public int YeniKelimeCikmaSayisi { get; set; }
+        public event Action<int> NewWordCountChanged;
 
-        public SettingsForm(int yeniKelimeCikmaSayisi)
+        public SettingsForm(int currentWordCount)
         {
             InitializeComponent();
-            YeniKelimeCikmaSayisi = yeniKelimeCikmaSayisi;
-            textBox1.Text = yeniKelimeCikmaSayisi.ToString();
+            textBox1.Text = currentWordCount.ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text, out int yeniSayi))
+            // Kullanıcının girdiği değeri al ve geçerli bir tamsayı olup olmadığını kontrol et
+            if (int.TryParse(textBox1.Text, out int newWordCount))
             {
-                YeniKelimeCikmaSayisi = yeniSayi;
-                this.DialogResult = DialogResult.OK;
+                NewWordCountChanged?.Invoke(newWordCount);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Lütfen geçerli bir sayı girin.");
+                // Geçersiz giriş durumunda bir mesaj göster
+                MessageBox.Show("Lütfen geçerli bir sayı girin.", "Geçersiz Giriş", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
