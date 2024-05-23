@@ -22,12 +22,12 @@ namespace KelimeOyun
         public SettingsForm(int currentWordCount)
         {
             InitializeComponent();
-            textBox1.Text = currentWordCount.ToString();
+            txtYeniKelime.Text = currentWordCount.ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             // Kullanıcının girdiği değeri al ve geçerli bir tamsayı olup olmadığını kontrol et
-            if (int.TryParse(textBox1.Text, out int newWordCount))
+            if (int.TryParse(txtYeniKelime.Text, out int newWordCount))
             {
                 NewWordCountChanged?.Invoke(newWordCount);
                 this.Close();

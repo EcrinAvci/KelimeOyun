@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txtKullaniciAd = new TextBox();
+            txtKullaniciSifre = new TextBox();
+            btnGuncelle = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -57,31 +57,31 @@
             label2.TabIndex = 1;
             label2.Text = "Yeni Şifre ";
             // 
-            // textBox1
+            // txtKullaniciAd
             // 
-            textBox1.Location = new Point(179, 102);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 23);
-            textBox1.TabIndex = 2;
+            txtKullaniciAd.Location = new Point(179, 102);
+            txtKullaniciAd.Name = "txtKullaniciAd";
+            txtKullaniciAd.Size = new Size(150, 23);
+            txtKullaniciAd.TabIndex = 2;
             // 
-            // textBox2
+            // txtKullaniciSifre
             // 
-            textBox2.Location = new Point(179, 139);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
-            textBox2.TabIndex = 3;
-            textBox2.UseSystemPasswordChar = true;
+            txtKullaniciSifre.Location = new Point(179, 139);
+            txtKullaniciSifre.Name = "txtKullaniciSifre";
+            txtKullaniciSifre.Size = new Size(150, 23);
+            txtKullaniciSifre.TabIndex = 3;
+            txtKullaniciSifre.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btnGuncelle
             // 
-            button1.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(231, 168);
-            button1.Name = "button1";
-            button1.Size = new Size(98, 34);
-            button1.TabIndex = 4;
-            button1.Text = "Güncelle";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnGuncelle.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuncelle.Location = new Point(231, 168);
+            btnGuncelle.Name = "btnGuncelle";
+            btnGuncelle.Size = new Size(98, 34);
+            btnGuncelle.TabIndex = 4;
+            btnGuncelle.Text = "Güncelle";
+            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -101,9 +101,9 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(362, 241);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnGuncelle);
+            Controls.Add(txtKullaniciSifre);
+            Controls.Add(txtKullaniciAd);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "PasswordForgot";
@@ -117,9 +117,9 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtKullaniciAd;
+        private TextBox txtKullaniciSifre;
+        private Button btnGuncelle;
         private PictureBox pictureBox1;
     }
 }

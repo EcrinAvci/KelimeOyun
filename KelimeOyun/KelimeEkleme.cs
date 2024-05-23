@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace KelimeOyun
 {
-    public partial class Form3 : Form
+    public partial class KelimeEkleme : Form
     {
-        public Form3()
+        public KelimeEkleme()
         {
             InitializeComponent();
         }
@@ -51,8 +51,8 @@ namespace KelimeOyun
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string soru = textBox1.Text;
-            string kelime = textBox2.Text;
+            string soru = txtEngAd.Text;
+            string kelime = txtTrAd.Text;
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
             

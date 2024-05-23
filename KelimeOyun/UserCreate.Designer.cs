@@ -28,71 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox2 = new TextBox();
-            button2 = new Button();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            button1 = new Button();
+            txtKayitSifre = new TextBox();
+            btnKayit = new Button();
+            txtKullaniciKayit = new TextBox();
+            lblKullaniciSifre = new Label();
+            lblKullaniciAd = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox2
+            // txtKayitSifre
             // 
-            textBox2.Location = new Point(148, 162);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(181, 23);
-            textBox2.TabIndex = 23;
-            textBox2.UseSystemPasswordChar = true;
+            txtKayitSifre.Location = new Point(161, 199);
+            txtKayitSifre.Multiline = true;
+            txtKayitSifre.Name = "txtKayitSifre";
+            txtKayitSifre.Size = new Size(181, 23);
+            txtKayitSifre.TabIndex = 23;
+            txtKayitSifre.UseSystemPasswordChar = true;
             // 
-            // button2
+            // btnKayit
             // 
-            button2.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(240, 203);
-            button2.Name = "button2";
-            button2.Size = new Size(89, 35);
-            button2.TabIndex = 22;
-            button2.Text = "Kayıt Ol";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnKayit.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKayit.Location = new Point(253, 240);
+            btnKayit.Name = "btnKayit";
+            btnKayit.Size = new Size(89, 35);
+            btnKayit.TabIndex = 22;
+            btnKayit.Text = "Kayıt Ol";
+            btnKayit.UseVisualStyleBackColor = true;
+            btnKayit.Click += button2_Click;
             // 
-            // textBox1
+            // txtKullaniciKayit
             // 
-            textBox1.Location = new Point(148, 110);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(181, 25);
-            textBox1.TabIndex = 19;
+            txtKullaniciKayit.Location = new Point(161, 147);
+            txtKullaniciKayit.Multiline = true;
+            txtKullaniciKayit.Name = "txtKullaniciKayit";
+            txtKullaniciKayit.Size = new Size(181, 25);
+            txtKullaniciKayit.TabIndex = 19;
             // 
-            // label2
+            // lblKullaniciSifre
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 157);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 25);
-            label2.TabIndex = 18;
-            label2.Text = "Şifre";
+            lblKullaniciSifre.AutoSize = true;
+            lblKullaniciSifre.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKullaniciSifre.Location = new Point(25, 194);
+            lblKullaniciSifre.Name = "lblKullaniciSifre";
+            lblKullaniciSifre.Size = new Size(57, 25);
+            lblKullaniciSifre.TabIndex = 18;
+            lblKullaniciSifre.Text = "Şifre";
             // 
-            // label1
+            // lblKullaniciAd
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 110);
-            label1.Name = "label1";
-            label1.Size = new Size(130, 25);
-            label1.TabIndex = 17;
-            label1.Text = "Kullanıcı Adı";
+            lblKullaniciAd.AutoSize = true;
+            lblKullaniciAd.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKullaniciAd.Location = new Point(25, 147);
+            lblKullaniciAd.Name = "lblKullaniciAd";
+            lblKullaniciAd.Size = new Size(130, 25);
+            lblKullaniciAd.TabIndex = 17;
+            lblKullaniciAd.Text = "Kullanıcı Adı";
             // 
-            // button1
+            // pictureBox1
             // 
-            button1.BackgroundImage = Properties.Resources.free_user_group_icon_307_thumb;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(116, 1);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 103);
-            button1.TabIndex = 24;
-            button1.UseVisualStyleBackColor = true;
+            pictureBox1.Image = Properties.Resources.free_user_group_icon_307_thumb;
+            pictureBox1.Location = new Point(80, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(212, 129);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 24;
+            pictureBox1.TabStop = false;
             // 
             // UserCreate
             // 
@@ -100,26 +101,27 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(363, 282);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(button2);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Controls.Add(txtKayitSifre);
+            Controls.Add(btnKayit);
+            Controls.Add(txtKullaniciKayit);
+            Controls.Add(lblKullaniciSifre);
+            Controls.Add(lblKullaniciAd);
             Name = "UserCreate";
             Text = "UserCreate";
             Load += UserCreate_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox2;
-        private Button button2;
-        private TextBox textBox1;
-        private Label label2;
-        private Label label1;
-        private Button button1;
+        private TextBox txtKayitSifre;
+        private Button btnKayit;
+        private TextBox txtKullaniciKayit;
+        private Label lblKullaniciSifre;
+        private Label lblKullaniciAd;
+        private PictureBox pictureBox1;
     }
 }

@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace KelimeOyun
 {
-    public partial class Form2 : Form
+    public partial class UserModule : Form
     {
-        public Form2()
+        public UserModule()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 frm3 = new Form3();
+            KelimeEkleme frm3 = new KelimeEkleme();
             frm3.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 frm4 = new Form4();
+            Exam frm4 = new Exam();
             frm4.Show();
             this.Hide();
         }

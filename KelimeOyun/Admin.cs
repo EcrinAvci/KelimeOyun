@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace KelimeOyun
 {
-    public partial class Form5 : Form
+    public partial class Admin : Form
     {
-        public Form5()
+        public Admin()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace KelimeOyun
             SqlDataAdapter da = new SqlDataAdapter(veriler, bgl.baglanti());
             DataSet ds = new DataSet();
             da.Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
+            dataGridViewKullanici.DataSource = ds.Tables[0];
         }
         private void Form5_Load(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace KelimeOyun
                 {
                     connection.Open();
                     SqlCommand komut = new SqlCommand("Delete from tbl_Kullanici where KullaniciAdi=@p1", connection);
-                    komut.Parameters.AddWithValue("@p1", textBox2.Text);
+                    komut.Parameters.AddWithValue("@p1", txtAd.Text);
                     komut.ExecuteNonQuery();
 
                     MessageBox.Show("Kullanıcı Silindi.");
@@ -55,9 +55,9 @@ namespace KelimeOyun
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int secilen = dataGridView1.SelectedCells[0].RowIndex;
-            textBox2.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            int secilen = dataGridViewKullanici.SelectedCells[0].RowIndex;
+            txtAd.Text = dataGridViewKullanici.Rows[secilen].Cells[1].Value.ToString();
+            txtSifre.Text = dataGridViewKullanici.Rows[secilen].Cells[2].Value.ToString();
         }
     }
 }

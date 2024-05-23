@@ -1,6 +1,6 @@
 ﻿namespace KelimeOyun
 {
-    partial class Form4
+    partial class Exam
     {
         /// <summary>
         /// Required designer variable.
@@ -35,8 +35,8 @@
             radioButton4 = new RadioButton();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnCevap = new Button();
+            btnAyarlar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -113,36 +113,36 @@
             label2.TabIndex = 6;
             label2.Text = "Kelimesinin anlamı nedir?";
             // 
-            // button1
+            // btnCevap
             // 
-            button1.BackgroundImage = Properties.Resources.true_tick;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(283, 347);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 47);
-            button1.TabIndex = 7;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnCevap.BackgroundImage = Properties.Resources.true_tick;
+            btnCevap.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCevap.Location = new Point(283, 347);
+            btnCevap.Name = "btnCevap";
+            btnCevap.Size = new Size(75, 47);
+            btnCevap.TabIndex = 7;
+            btnCevap.UseVisualStyleBackColor = true;
+            btnCevap.Click += button1_Click;
             // 
-            // button2
+            // btnAyarlar
             // 
-            button2.BackgroundImage = Properties.Resources.options_icon_30;
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.Location = new Point(382, 1);
-            button2.Name = "button2";
-            button2.Size = new Size(52, 36);
-            button2.TabIndex = 8;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnAyarlar.BackgroundImage = Properties.Resources.options_icon_30;
+            btnAyarlar.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAyarlar.Location = new Point(382, 1);
+            btnAyarlar.Name = "btnAyarlar";
+            btnAyarlar.Size = new Size(52, 36);
+            btnAyarlar.TabIndex = 8;
+            btnAyarlar.UseVisualStyleBackColor = true;
+            btnAyarlar.Click += button2_Click;
             // 
-            // Form4
+            // Exam
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(434, 393);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnAyarlar);
+            Controls.Add(btnCevap);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(radioButton4);
@@ -150,7 +150,7 @@
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label1);
-            Name = "Form4";
+            Name = "Exam";
             Text = "Quiz";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -167,7 +167,7 @@
         private RadioButton radioButton4;
         private PictureBox pictureBox1;
         private Label label2;
-        private Button button1;
-        private Button button2;
+        private Button btnCevap;
+        private Button btnAyarlar;
     }
 }

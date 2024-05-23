@@ -1,6 +1,6 @@
 ﻿namespace KelimeOyun
 {
-    partial class Form2
+    partial class UserModule
     {
         /// <summary>
         /// Required designer variable.

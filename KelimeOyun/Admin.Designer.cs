@@ -1,6 +1,6 @@
 ﻿namespace KelimeOyun
 {
-    partial class Form5
+    partial class Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
+            dataGridViewKullanici = new DataGridView();
+            btnSil = new Button();
             label2 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtAd = new TextBox();
+            txtSifre = new TextBox();
             groupBox1 = new GroupBox();
             pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKullanici).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewKullanici
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(205, 16);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(344, 282);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellClick += dataGridView1_CellClick;
+            dataGridViewKullanici.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewKullanici.Location = new Point(205, 16);
+            dataGridViewKullanici.Name = "dataGridViewKullanici";
+            dataGridViewKullanici.Size = new Size(344, 282);
+            dataGridViewKullanici.TabIndex = 0;
+            dataGridViewKullanici.CellClick += dataGridView1_CellClick;
             // 
-            // button1
+            // btnSil
             // 
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            button1.Location = new Point(117, 122);
-            button1.Name = "button1";
-            button1.Size = new Size(65, 31);
-            button1.TabIndex = 1;
-            button1.Text = "Sil";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnSil.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnSil.Location = new Point(117, 122);
+            btnSil.Name = "btnSil";
+            btnSil.Size = new Size(65, 31);
+            btnSil.TabIndex = 1;
+            btnSil.Text = "Sil";
+            btnSil.UseVisualStyleBackColor = true;
+            btnSil.Click += button1_Click;
             // 
             // label2
             // 
@@ -79,26 +79,26 @@
             label3.TabIndex = 4;
             label3.Text = "Şifre:";
             // 
-            // textBox2
+            // txtAd
             // 
-            textBox2.Location = new Point(81, 41);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 6;
+            txtAd.Location = new Point(81, 41);
+            txtAd.Name = "txtAd";
+            txtAd.Size = new Size(100, 23);
+            txtAd.TabIndex = 6;
             // 
-            // textBox3
+            // txtSifre
             // 
-            textBox3.Location = new Point(82, 83);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 7;
+            txtSifre.Location = new Point(82, 83);
+            txtSifre.Name = "txtSifre";
+            txtSifre.Size = new Size(100, 23);
+            txtSifre.TabIndex = 7;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtSifre);
+            groupBox1.Controls.Add(btnSil);
+            groupBox1.Controls.Add(txtAd);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(1, 136);
             groupBox1.Name = "groupBox1";
@@ -117,7 +117,7 @@
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
-            // Form5
+            // Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -125,11 +125,11 @@
             ClientSize = new Size(555, 307);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
-            Controls.Add(dataGridView1);
-            Name = "Form5";
+            Controls.Add(dataGridViewKullanici);
+            Name = "Admin";
             Text = "Admin";
             Load += Form5_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKullanici).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -138,12 +138,12 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private Button button1;
+        private DataGridView dataGridViewKullanici;
+        private Button btnSil;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtAd;
+        private TextBox txtSifre;
         private GroupBox groupBox1;
         private PictureBox pictureBox1;
     }

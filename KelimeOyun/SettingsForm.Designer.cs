@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            button1 = new Button();
-            label1 = new Label();
+            txtYeniKelime = new TextBox();
+            btnKaydet = new Button();
+            lblYeniKelime = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txtYeniKelime
             // 
-            textBox1.Location = new Point(216, 166);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(57, 23);
-            textBox1.TabIndex = 0;
+            txtYeniKelime.Location = new Point(216, 166);
+            txtYeniKelime.Name = "txtYeniKelime";
+            txtYeniKelime.Size = new Size(57, 23);
+            txtYeniKelime.TabIndex = 0;
             // 
-            // button1
+            // btnKaydet
             // 
-            button1.Location = new Point(216, 195);
-            button1.Name = "button1";
-            button1.Size = new Size(57, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Kaydet";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnKaydet.Location = new Point(216, 195);
+            btnKaydet.Name = "btnKaydet";
+            btnKaydet.Size = new Size(57, 23);
+            btnKaydet.TabIndex = 1;
+            btnKaydet.Text = "Kaydet";
+            btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += button1_Click;
             // 
-            // label1
+            // lblYeniKelime
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label1.Location = new Point(12, 166);
-            label1.Name = "label1";
-            label1.Size = new Size(198, 21);
-            label1.TabIndex = 2;
-            label1.Text = " Yeni Kelime Çıkma Sayısı :";
+            lblYeniKelime.AutoSize = true;
+            lblYeniKelime.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblYeniKelime.Location = new Point(12, 166);
+            lblYeniKelime.Name = "lblYeniKelime";
+            lblYeniKelime.Size = new Size(198, 21);
+            lblYeniKelime.TabIndex = 2;
+            lblYeniKelime.Text = " Yeni Kelime Çıkma Sayısı :";
             // 
             // pictureBox1
             // 
@@ -79,9 +79,9 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(281, 228);
             Controls.Add(pictureBox1);
-            Controls.Add(label1);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(lblYeniKelime);
+            Controls.Add(btnKaydet);
+            Controls.Add(txtYeniKelime);
             Name = "SettingsForm";
             Text = "SettingsForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -91,9 +91,9 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Button button1;
-        private Label label1;
+        private TextBox txtYeniKelime;
+        private Button btnKaydet;
+        private Label lblYeniKelime;
         private PictureBox pictureBox1;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace KelimeOyun
 {
-    partial class Form3
+    partial class KelimeEkleme
     {
         /// <summary>
         /// Required designer variable.
@@ -31,12 +31,12 @@
             label1 = new Label();
             label2 = new Label();
             openFileDialog1 = new OpenFileDialog();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtEngAd = new TextBox();
+            btnKelimeEkle = new Button();
             label4 = new Label();
             pictureBox1 = new PictureBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            txtTrAd = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold);
-            label1.Location = new Point(25, 224);
+            label1.Location = new Point(49, 253);
             label1.Name = "label1";
             label1.Size = new Size(63, 21);
             label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold);
-            label2.Location = new Point(25, 155);
+            label2.Location = new Point(49, 184);
             label2.Name = "label2";
             label2.Size = new Size(107, 21);
             label2.TabIndex = 1;
@@ -64,29 +64,29 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox1
+            // txtEngAd
             // 
-            textBox1.Location = new Point(138, 157);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(137, 23);
-            textBox1.TabIndex = 3;
+            txtEngAd.Location = new Point(162, 186);
+            txtEngAd.Name = "txtEngAd";
+            txtEngAd.Size = new Size(137, 23);
+            txtEngAd.TabIndex = 3;
             // 
-            // button1
+            // btnKelimeEkle
             // 
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            button1.Location = new Point(138, 219);
-            button1.Name = "button1";
-            button1.Size = new Size(137, 30);
-            button1.TabIndex = 6;
-            button1.Text = "Ekle";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnKelimeEkle.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKelimeEkle.Location = new Point(162, 248);
+            btnKelimeEkle.Name = "btnKelimeEkle";
+            btnKelimeEkle.Size = new Size(137, 30);
+            btnKelimeEkle.TabIndex = 6;
+            btnKelimeEkle.Text = "Ekle";
+            btnKelimeEkle.UseVisualStyleBackColor = true;
+            btnKelimeEkle.Click += button1_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Cambria", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label4.Location = new Point(60, 129);
+            label4.Location = new Point(49, 9);
             label4.Name = "label4";
             label4.Size = new Size(248, 25);
             label4.TabIndex = 8;
@@ -95,10 +95,10 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = Properties.Resources._326905;
-            pictureBox1.Location = new Point(83, 12);
+            pictureBox1.Image = Properties.Resources._3159359;
+            pictureBox1.Location = new Point(49, 37);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(203, 114);
+            pictureBox1.Size = new Size(250, 140);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
@@ -107,34 +107,34 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label3.Location = new Point(25, 192);
+            label3.Location = new Point(49, 221);
             label3.Name = "label3";
             label3.Size = new Size(90, 19);
             label3.TabIndex = 10;
             label3.Text = "Türkçe Adı";
             // 
-            // textBox2
+            // txtTrAd
             // 
-            textBox2.Location = new Point(138, 190);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(137, 23);
-            textBox2.TabIndex = 11;
+            txtTrAd.Location = new Point(162, 219);
+            txtTrAd.Name = "txtTrAd";
+            txtTrAd.Size = new Size(137, 23);
+            txtTrAd.TabIndex = 11;
             // 
-            // Form3
+            // KelimeEkleme
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(345, 286);
-            Controls.Add(textBox2);
+            Controls.Add(txtTrAd);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnKelimeEkle);
+            Controls.Add(txtEngAd);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form3";
+            Name = "KelimeEkleme";
             Text = "Kelime Ekleme";
             Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -147,11 +147,11 @@
         private Label label1;
         private Label label2;
         private OpenFileDialog openFileDialog1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtEngAd;
+        private Button btnKelimeEkle;
         private Label label4;
         private PictureBox pictureBox1;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtTrAd;
     }
 }

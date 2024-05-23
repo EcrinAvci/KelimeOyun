@@ -30,8 +30,8 @@ namespace KelimeOyun
                 connection.Open();
 
                 SqlCommand komut2 = new SqlCommand("Insert Into tbl_Kullanici(KullaniciAdi , Sifre) values (@p1,@p2)", connection);
-                komut2.Parameters.AddWithValue("@p1", textBox1.Text);
-                komut2.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut2.Parameters.AddWithValue("@p1", txtKullaniciKayit.Text);
+                komut2.Parameters.AddWithValue("@p2", txtKayitSifre.Text);
                 komut2.ExecuteNonQuery();
 
                 MessageBox.Show("Kaydınız Başarıyla Gerçekleşmiştir.");

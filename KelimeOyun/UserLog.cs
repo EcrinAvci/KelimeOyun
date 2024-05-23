@@ -26,13 +26,13 @@ namespace KelimeOyun
             {
                 connection.Open();
                 SqlCommand komut = new SqlCommand("SELECT * FROM tbl_Kullanici WHERE KullaniciAdi = @p1 AND Sifre = @p2", connection);
-                komut.Parameters.AddWithValue("@p1", textBox1.Text);
-                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut.Parameters.AddWithValue("@p1", txtKullaniciAD.Text);
+                komut.Parameters.AddWithValue("@p2", txtSifre.Text);
                 SqlDataReader dr = komut.ExecuteReader();
 
                 if (dr.Read())
                 {
-                    Form2 form2 = new Form2();
+                    UserModule form2 = new UserModule();
                     form2.Show();
                     this.Hide();
                 }

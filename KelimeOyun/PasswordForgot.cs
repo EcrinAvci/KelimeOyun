@@ -25,8 +25,8 @@ namespace KelimeOyun
                 connection.Open();
 
                 SqlCommand komut = new SqlCommand("Update tbl_Kullanici Set Sifre=@p2 WHERE KullaniciAdi=@p1", connection);
-                komut.Parameters.AddWithValue("@p1", textBox1.Text);
-                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut.Parameters.AddWithValue("@p1", txtKullaniciAd.Text);
+                komut.Parameters.AddWithValue("@p2", txtKullaniciSifre.Text);
                 komut.ExecuteNonQuery();
 
                 MessageBox.Show("İşleminiz başarıyla gerçekleşmiştir.");

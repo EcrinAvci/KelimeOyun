@@ -14,9 +14,9 @@ using RadioButton = System.Windows.Forms.RadioButton;
 
 namespace KelimeOyun
 {
-    public partial class Form4 : Form
+    public partial class Exam : Form
     {
-        public Form4()
+        public Exam()
         {
             InitializeComponent();
 

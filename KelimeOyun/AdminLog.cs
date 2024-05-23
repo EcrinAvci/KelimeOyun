@@ -25,14 +25,14 @@ namespace KelimeOyun
                 connection.Open();
 
                 SqlCommand komut = new SqlCommand("Select * From tbl_Admin WHERE AdminAdi=@p1 and Sifre=@p2", connection);
-                komut.Parameters.AddWithValue("@p1", textBox1.Text);
-                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut.Parameters.AddWithValue("@p1", txtAdminAd.Text);
+                komut.Parameters.AddWithValue("@p2", txtAdminSifre.Text);
 
                 SqlDataReader dr = komut.ExecuteReader();
 
                 if (dr.Read())
                 {
-                    Form5 form5 = new Form5();
+                    Admin form5 = new Admin();
                     form5.Show();
                     this.Hide();
                 }
@@ -48,5 +48,6 @@ namespace KelimeOyun
 
 
         }
+
     }
 }

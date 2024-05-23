@@ -1,6 +1,6 @@
 ﻿namespace KelimeOyun
 {
-    partial class Form1
+    partial class MainScreen
     {
         /// <summary>
         ///  Required designer variable.
@@ -63,7 +63,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(98, 306);
+            label1.Location = new Point(87, 306);
             label1.Name = "label1";
             label1.Size = new Size(77, 21);
             label1.TabIndex = 2;

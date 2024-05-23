@@ -28,42 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox2 = new TextBox();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            txtAdminSifre = new TextBox();
+            btn_AdminGiris = new Button();
+            txtAdminAd = new TextBox();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox2
+            // txtAdminSifre
             // 
-            textBox2.Location = new Point(169, 193);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(181, 23);
-            textBox2.TabIndex = 23;
-            textBox2.UseSystemPasswordChar = true;
+            txtAdminSifre.Location = new Point(169, 193);
+            txtAdminSifre.Multiline = true;
+            txtAdminSifre.Name = "txtAdminSifre";
+            txtAdminSifre.Size = new Size(181, 23);
+            txtAdminSifre.TabIndex = 23;
+            txtAdminSifre.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btn_AdminGiris
             // 
-            button1.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(261, 233);
-            button1.Name = "button1";
-            button1.Size = new Size(89, 35);
-            button1.TabIndex = 20;
-            button1.Text = "GİRİŞ";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_AdminGiris.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_AdminGiris.Location = new Point(261, 233);
+            btn_AdminGiris.Name = "btn_AdminGiris";
+            btn_AdminGiris.Size = new Size(89, 35);
+            btn_AdminGiris.TabIndex = 20;
+            btn_AdminGiris.Text = "GİRİŞ";
+            btn_AdminGiris.UseVisualStyleBackColor = true;
+            btn_AdminGiris.Click += button1_Click;
             // 
-            // textBox1
+            // txtAdminAd
             // 
-            textBox1.Location = new Point(169, 141);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(181, 25);
-            textBox1.TabIndex = 19;
+            txtAdminAd.Location = new Point(169, 141);
+            txtAdminAd.Multiline = true;
+            txtAdminAd.Name = "txtAdminAd";
+            txtAdminAd.Size = new Size(181, 25);
+            txtAdminAd.TabIndex = 19;
+            //txtAdminAd.TextChanged += txtAdminAd_TextChanged;
             // 
             // label2
             // 
@@ -102,9 +103,9 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(372, 272);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(txtAdminSifre);
+            Controls.Add(btn_AdminGiris);
+            Controls.Add(txtAdminAd);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "AdminLog";
@@ -115,9 +116,9 @@
         }
 
         #endregion
-        private TextBox textBox2;
-        private Button button1;
-        private TextBox textBox1;
+        private TextBox txtAdminSifre;
+        private Button btn_AdminGiris;
+        private TextBox txtAdminAd;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
