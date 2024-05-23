@@ -32,9 +32,7 @@
             label2 = new Label();
             button2 = new Button();
             label1 = new Label();
-            button3 = new Button();
             button4 = new Button();
-            label3 = new Label();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -80,17 +78,6 @@
             label1.TabIndex = 4;
             label1.Text = "Sınav";
             // 
-            // button3
-            // 
-            button3.BackgroundImage = Properties.Resources.options_icon_30;
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.Location = new Point(8, 196);
-            button3.Name = "button3";
-            button3.Size = new Size(196, 143);
-            button3.TabIndex = 5;
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // button4
             // 
             button4.BackgroundImage = Properties.Resources._6104564;
@@ -101,16 +88,6 @@
             button4.TabIndex = 6;
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold);
-            label3.Location = new Point(71, 342);
-            label3.Name = "label3";
-            label3.Size = new Size(67, 21);
-            label3.TabIndex = 7;
-            label3.Text = "Ayarlar";
             // 
             // label4
             // 
@@ -128,9 +105,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(449, 369);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(label2);
@@ -146,9 +121,7 @@
         private Label label2;
         private Button button2;
         private Label label1;
-        private Button button3;
         private Button button4;
-        private Label label3;
         private Label label4;
     }
 }

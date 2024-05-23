@@ -20,13 +20,21 @@ namespace KelimeOyun
         sqlbaglantisi bgl= new sqlbaglantisi();
         private void button1_Click(object sender, EventArgs e)
         {
-                SqlCommand komut = new SqlCommand("Update tbl_Kullanici Set Sifre=@p2 WHERE KullaniciAdi=@p1", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", textBox1.Text);
-                komut.Parameters.AddWithValue("@p2",textBox2.Text);
-                komut.ExecuteNonQuery();    
-                bgl.baglanti().Close();
+            using (var connection = bgl.baglanti())
+            {
+                connection.Open();
 
-            MessageBox.Show("İşleminiz başarıyla gerçekleşmiştir.");
+                SqlCommand komut = new SqlCommand("Update tbl_Kullanici Set Sifre=@p2 WHERE KullaniciAdi=@p1", connection);
+                komut.Parameters.AddWithValue("@p1", textBox1.Text);
+                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut.ExecuteNonQuery();
+
+                MessageBox.Show("İşleminiz başarıyla gerçekleşmiştir.");
+
+                connection.Close();
+            }
+
+
         }
     }
 }

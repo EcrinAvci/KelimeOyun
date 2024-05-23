@@ -41,9 +41,7 @@ namespace KelimeOyun
                     MessageBox.Show("Kullanıcı Adı ya da şifreyi hatalı girdiniz!");
                 }
 
-                // DataReader'ı kapat
                 dr.Close();
-                // Bağlantıyı kapat
                 connection.Close();
             }
 

@@ -20,22 +20,33 @@ namespace KelimeOyun
         sqlbaglantisi bgl = new sqlbaglantisi();
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select* From tbl_Admin WHERE AdminAdi=@p1 and Sifre=@p2", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", textBox1.Text);
-            komut.Parameters.AddWithValue("@p2", textBox2.Text);
-            SqlDataReader dr = komut.ExecuteReader();
-            bgl.baglanti().Close();
+            using (var connection = bgl.baglanti())
+            {
+                connection.Open();
 
-            if (dr.Read())
-            {
-                Form2 form2 = new Form2();
-                form2.Show();
-                this.Hide();
+                SqlCommand komut = new SqlCommand("Select * From tbl_Admin WHERE AdminAdi=@p1 and Sifre=@p2", connection);
+                komut.Parameters.AddWithValue("@p1", textBox1.Text);
+                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+
+                SqlDataReader dr = komut.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı Adı ya da şifreyi hatalı girdiniz!");
+                }
+
+                dr.Close();
+                connection.Close();
             }
-            else
-            {
-                MessageBox.Show("Kullanıcı Adı ya da şifreyi hatalı girdiniz!");
-            }
+
+
+
         }
     }
 }
