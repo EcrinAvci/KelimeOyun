@@ -44,7 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label1.Location = new Point(86, 204);
+            label1.Location = new Point(102, 204);
             label1.Name = "label1";
             label1.Size = new Size(0, 21);
             label1.TabIndex = 0;
@@ -115,19 +115,22 @@
             // 
             // button1
             // 
-            button1.Location = new Point(283, 362);
+            button1.BackgroundImage = Properties.Resources.true_tick;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Location = new Point(283, 347);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(75, 47);
             button1.TabIndex = 7;
-            button1.Text = "Cevapla";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(12, 362);
+            button2.BackgroundImage = Properties.Resources.options_icon_30;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(382, 1);
             button2.Name = "button2";
-            button2.Size = new Size(30, 23);
+            button2.Size = new Size(52, 36);
             button2.TabIndex = 8;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
@@ -136,6 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(434, 393);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -147,7 +151,7 @@
             Controls.Add(radioButton1);
             Controls.Add(label1);
             Name = "Form4";
-            Text = "Form4";
+            Text = "Quiz";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

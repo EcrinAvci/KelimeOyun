@@ -142,6 +142,9 @@
   <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="6104564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6104564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="passwrd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passwrd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +160,7 @@
   <data name="dda4acff5ee800f4b70f1e73508ce8ee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dda4acff5ee800f4b70f1e73508ce8ee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6104564" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6104564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="true tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\true tick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
